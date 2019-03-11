@@ -1,0 +1,28 @@
+.upload-container {
+    width: 100vw;
+    height: calc(100vh - 50px);
+
+    .wrapper-center{
+        width: 84%;
+        max-width: 840px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .login-button-container {
+        max-width: 175px;
+    }
+
+    .noAutenticado {
+        margin: 0!important;
+        padding-bottom: 10px;
+    }
+}
+
+.contraste {
+    .login-button-container {
+        color: #fafafa;
+    }
+}

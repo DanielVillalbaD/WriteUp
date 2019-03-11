@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
+
+//Typo
+$dark: #383838;
+$semi-dark: #5b5b5b;
+$light: #d4d7d8;
+
+$background: #fafafa;
+
+//Accent Color
+$primary: #e3a131;
+$primary-darken: #B88126;
+$primary-disabled: #6f9fbb;
+$secondary: #2c6a92;
+$secondary-darken: #1b6185;
+$secondary-disabled: #ffe6a1;
+
+//State colors
+$sucess: #9ec658;
+$error: #ce5f49;
+
+//Fonts
+$roboto: 'Roboto', sans-serif;
+$playfair: 'Playfair Display', serif;
+$h1-font: 900 2.4rem $playfair;
+$nav-font: 500 1.1rem $roboto;
+$p-font: 400 1rem $roboto;
+$sub-font: bold 1.3rem $roboto;

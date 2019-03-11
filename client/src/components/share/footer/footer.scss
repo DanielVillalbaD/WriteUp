@@ -1,0 +1,16 @@
+@import '../variables.scss';
+
+.wu-footer {
+    display: block;
+    text-align: center;
+    color: $semi-dark;
+    border-top: 1px solid rgba(212, 215, 216, .4);
+    border-top-style: dashed;
+    p {
+        line-height: 1rem;
+        font-size: 1rem;
+        display: block;
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
+    }
+}

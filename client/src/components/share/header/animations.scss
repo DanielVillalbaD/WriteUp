@@ -1,0 +1,70 @@
+@import '../variables.scss';
+
+/* CUSTOMIZE */
+$back-bd: 0s;
+$back-od: .6s;
+$front-bd: 1s;
+$front-od: 1.5s;
+
+/* ANIMACIÓN SHADOW LOGO */
+
+@keyframes drawShadow {
+    0% {
+      transform: translateY(0px);
+      filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.3));
+    }
+    50% {
+      transform: translateY(-2px);
+      filter: drop-shadow(0px 6px 3px rgba(0,0,0,0.1));
+    }
+    100% {
+      transform: translateY(0px);
+      filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.3));
+    }
+}
+
+@keyframes b1 {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes b2 {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes b3 {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes b4 {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes b5 {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+  

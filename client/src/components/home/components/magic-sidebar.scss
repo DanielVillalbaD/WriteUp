@@ -1,0 +1,19 @@
+@import '../../share/variables.scss';
+
+.magic-sidebar {
+    width: 6px;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    background-color: $secondary;
+    z-index: 2;
+
+    &:before{
+        content:"";
+        width: 6px;
+        height: 130px;
+        position: absolute;
+        background-color: $primary;
+        border: 0;
+    }
+}

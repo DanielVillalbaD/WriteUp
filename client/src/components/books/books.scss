@@ -1,0 +1,72 @@
+.fondo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.margins {
+    margin: 15px;
+}
+
+.titulo {
+    text-align: center;
+    color: #1b6185;
+}
+
+.searchBar {
+    margin: 15px;
+    & input {
+    width: 600px;
+    }
+}
+
+.filaFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.embed-responsive-item {
+    height: 400px;
+    width: 900px;
+}
+
+.cardBook {
+    max-width: 260px;
+    margin: 15px;
+}
+
+.imagenBook {
+    height: auto;
+    height: 320px;
+    background-size: cover!important;
+    background-repeat: no-repeat;
+}
+
+.paperDetailBook {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.detailsBook {
+    width: 300px;
+    padding: 15px;
+}
+
+div[class*="MuiCardContent-root-"] {
+    padding-left: 16px!important;
+    padding-right: 16px!important;
+    height: 82px;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+div[class*="MuiCardActions-root"] {
+    .btn-h {
+        margin-left: 10px;
+        margin-bottom: 16px;
+    }
+}

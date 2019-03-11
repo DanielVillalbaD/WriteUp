@@ -1,0 +1,48 @@
+@import '../variables.scss';
+
+.wu-header{
+    text-align: right;
+    position: absolute;
+    z-index: 10;
+    padding: 30px 80px 0 0;
+    max-width: 1920px;
+    right: 0;
+    width: 100%;
+
+
+    .header-nav {
+        display: inline-block;
+        margin: 0 1.3rem 0 .5rem;
+    }
+}
+
+.header-link{
+    display: inline-block;
+    margin: 0 1.1rem;
+    font: $nav-font;
+    color: $semi-dark;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: .5px;
+
+    &:before {
+        top: 0;
+        right: 0;
+        height: 0%;
+        color: $primary;
+        overflow: hidden;
+        position: absolute;
+        content: attr(linktext);
+        transition: all 0.8s;
+    }
+
+    &:hover, &:active, &:focus {
+        color: $secondary;
+        transition: all 0.3s;
+        &:before {
+            height: 100%;
+        }
+    }
+}
+

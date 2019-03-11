@@ -1,0 +1,55 @@
+@import '../../share/variables.scss';
+
+.back-top {
+    width: 3px;
+    height: 50px;
+    padding: 10px;
+    position: absolute;
+    bottom: 50px;
+    left: calc(calc(100vw - 12.5%) - 13px);
+    cursor: pointer;
+    z-index: 1;
+
+    .v-line {
+        width: 3px;
+        height: 46px;
+        background-color: $light;
+        transition: all .2s ease;
+    
+        &:before {
+            content: "";
+            top: 9px;
+            left: 6px;
+            position: absolute;
+            width: 3px;
+            transform: rotate(45deg);
+            background-color: $light;
+            height: 11px;
+            transition: all .2s ease;
+        }
+        &:after {
+            content: "";
+            top: 9px;
+            left: 14px;
+            position: absolute;
+            width: 3px;
+            transform: rotate(-45deg);
+            background-color: $light;
+            height: 11px;
+            transition: all .2s ease;
+        }
+    }
+
+    &:hover, &:active {
+        .v-line {
+            height: 50px;
+            background-color: $primary;
+        
+            &::before, &::after {
+                height: 13px;
+                background-color: $primary;
+                top: 6px;
+            }
+        }
+    }
+}

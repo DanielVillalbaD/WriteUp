@@ -1,0 +1,135 @@
+@import '../../share/variables.scss';
+a {
+  text-decoration: none;
+  &:visited{
+    color: inherit;
+  }
+}
+
+.btn-h {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  transform: translate3d(0, 0, 0);
+  min-height: 30px;
+  max-width: 100%;
+  min-width: auto;
+  margin: 10px 0;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex start;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 30px;
+  transform-style: preserve-3d;
+  text-decoration: none;
+  cursor: pointer;
+
+  .line-btn {
+    transform: translate3d(0, 1px, 0);
+    transform-style: preserve-3d;
+    width: 40px;
+    height: 3px;
+    background-color: $primary;
+    position: absolute;
+    top: 13px;
+    transition: all .32s ease-out;
+  }
+
+  .btn-txt {
+    transform: translate3d(0, 0, 0);
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    margin-left: 55px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    transition: all .32s ease-out;
+  }
+
+  &:visited {
+    .btn-txt {
+      color: $dark;
+    }
+  }
+
+  &:hover {
+    .line-btn {
+      transform: translate3d(0, -18px, 0);
+      height: 40px;
+      width: 100%;
+      position: absolute;
+      top: 13px;
+      background-color: $secondary;
+    }
+
+    .btn-txt {
+      transform: translate3d(-27px, 0, 0);
+      color: white;
+    }
+  }
+}
+
+.btn-h-reverse {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  transform: translate3d(0, 0, 0);
+  min-height: 30px;
+  max-width: 100%;
+  min-width: auto;
+  margin: 10px 0;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex start;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 30px;
+  transform-style: preserve-3d;
+  text-decoration: none;
+  cursor: pointer;
+
+  .line-btn {
+    transform: translate3d(0, 1px, 0);
+    transform-style: preserve-3d;
+    width: 40px;
+    height: 3px;
+    background-color: $secondary;
+    position: absolute;
+    top: 13px;
+    transition: all .32s ease-out;
+  }
+
+  .btn-txt {
+    transform: translate3d(0, 0, 0);
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    margin-left: 55px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    transition: all .32s ease-out;
+  }
+
+  &:visited {
+    .btn-txt {
+      color: $dark;
+    }
+  }
+
+  &:hover {
+    .line-btn {
+      transform: translate3d(0, -18px, 0);
+      height: 40px;
+      width: 100%;
+      position: absolute;
+      top: 13px;
+      background-color: $primary;
+    }
+
+    .btn-txt {
+      transform: translate3d(-27px, 0, 0);
+      color: white;
+    }
+  }
+}

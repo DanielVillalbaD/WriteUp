@@ -1,0 +1,194 @@
+@import '../share/variables.scss';
+
+.react-pdf__Page {
+	overflow: show;
+
+    .react-pdf__Page__svg {
+        background-color: transparent !important;
+        text-align: center !important;
+    }
+}
+
+.pdf-nav {
+	position: relative;
+}
+
+span.lector-arrow {
+	width: 36px;
+	height: 36px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 24px;
+    z-index: 50;
+    cursor: pointer;
+	
+	&::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		border-width: 5px 5px 0 0;
+		border-style: solid;
+		border-color: $secondary;
+		transition: .2s ease;
+		display: block;
+		transform-origin: 100% 0;
+    }
+    
+	&:after {
+		content: '';
+		float: left;
+		position: relative;
+		top: -100%;
+		width: 100%;
+		height: 100%;
+		border-width: 0 5px 0 0;
+		border-style: solid;
+		border-color: $secondary;
+		transform-origin: 100% 0;
+        transition:.2s ease;
+	}
+	
+	&:hover::after {
+		transform: rotate(45deg) translate(2px, 5px);
+		border-color: $primary;
+		height: 120%;
+	}
+	&:hover::before {
+		border-color: $primary;
+		transform: scale(.8);
+		
+	}	
+}
+
+span.left-arrow {
+    right: 380px;
+    transform: rotate(-135deg);
+}
+
+span.right-arrow {
+    right: 250px;
+    transform: rotate(45deg);
+}
+
+p.p-paginate {
+    position: absolute;
+    top: 30px;
+    margin: 0 !important;
+    padding: 0 !important;
+    right: 290px;
+    font-size: 1.2rem;
+    color: $secondary;
+    font-weight: bold;
+    z-index: 49;
+    min-width: 85px;
+    text-align: center;
+}
+
+span.rs-container {
+    position: absolute;
+    left: 46px;
+    top: 62px;
+    width: 60px !important;
+    z-index: 50;
+}
+
+$easeInOutExpo: cubic-bezier(1, 0, 0, 1);
+$easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
+
+.player__btn {
+    top: -.28rem;
+	appearance: none;
+	background: none;
+	border: none;
+	padding: 0;
+	outline: none;
+	position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+	&:hover {
+		.licon {
+			transform: scale(1.2);
+		}
+		.licon--mute {
+			transform: translateY(1px) scale(1.2);
+		}
+		.licon--play {
+			transform: translateX(2px) scale(1.2);
+        }
+        .licon--pause {
+            transform: translateY(-8px) scale(1.1);            
+        }
+	}
+}
+
+.player__btn--play {
+	width: 50px; height: 50px;
+	border-radius: 50%;
+	margin-right: 3rem;
+	overflow: hidden;
+}
+
+.outer-circle {
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+
+.licon--group {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	transform: translate3d(-50%, -77%, 0);
+	transition: transform .36s $easeInOutExpo;
+	will-change: transform;
+	z-index: 0;
+}
+
+.player__btn--play.paused .licon--group {
+	transform: translate3d(-50%, -14%, 0);
+	.licon--pause {
+		opacity: 0;
+	}
+	.licon--play {
+		opacity: 1;
+	}
+}
+
+.licon {
+	transition: transform .16s ease-in-out, opacity .36s $easeInOutExpo;
+}
+
+.licon--play {
+	margin-bottom: 2rem;
+	transform: translateX(2px);
+	opacity: 0;
+}
+
+.licon--pause {
+    opacity: 1;
+    transform: translateY(-8px);
+    &:hover {
+    transform: translateY(-12px);
+    }
+}
+
+.player__btn--mute {
+    width: 1.4rem; height: 2rem;
+    left: 4rem;
+    top: .15rem;
+	.licon--mute {
+		transform: translateY(1px);
+	}
+	.sound-wave {
+		transition: opacity .16s;
+	}
+}
+
+
+.player__btn--mute.muted .sound-wave {
+	opacity: 0;
+}
+
+
+

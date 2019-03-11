@@ -1,0 +1,43 @@
+@import '../variables.scss';
+
+/* LOGOTIPO INTRO */
+
+.logo-container {
+    display: inline-block;
+    position: absolute;
+    right: 35px;
+    top: calc(50% - .55rem);
+    z-index: 10;
+    
+    #logotipo {
+        width: 3rem;
+        margin: 0 auto;
+        overflow: visible;
+        transition: 0.25s ease;
+        cursor: pointer;
+
+        .cls1 {
+            fill: $primary-darken;
+        }
+          
+        .cls2 {
+            fill: $primary;
+        }
+          
+        .cls3 {
+            fill: $secondary-darken;
+        }
+          
+        .cls4 {
+            fill: $secondary;
+        }
+
+        &:hover {
+            animation: drawShadow 1.5s forwards;
+        }
+    }
+}
+
+@import './animations.scss';
+
+/* FIN LOGOTIPO INTRO */

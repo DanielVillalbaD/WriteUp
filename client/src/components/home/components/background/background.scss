@@ -1,0 +1,67 @@
+@import '../../../share/variables.scss';
+
+
+//Background Lines
+#lines {
+    display: grid;
+    grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    opacity: .5;
+    background-image: url('../../../assets/img/home/papel-rasgado.jpg');
+    background-color: #fafafa;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 50%;
+
+    .line {
+        border-left: 1px solid $light;
+        height: 100vh;
+        width: 20vw;
+        position: relative;
+
+        span {
+            height: 20px;
+            left: -3px;
+            top: -10%;
+            width: 5px;
+            position: absolute;
+            background: $light;
+            display: inline-block;
+        }
+
+        .b1 { animation: b1 16s infinite linear; }
+        .b2 { animation: b2 20s infinite linear; }
+        .b3 { animation: b3 10s infinite linear; }
+        .b4 { animation: b4 18s infinite linear; }
+        .b5 { animation: b5 12s infinite linear; }
+
+    }
+    
+}
+
+@media screen and (max-width:1366px) {
+    #lines {
+        background-position: 110% 0;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #lines {
+        background-position: 115% 0;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #lines {
+        background-position: 115% 0;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    #lines {
+        background: #fafafa;
+    }
+}

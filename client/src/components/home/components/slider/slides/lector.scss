@@ -1,0 +1,90 @@
+#lectores {
+    max-width: 720px;
+    position: relative;
+    top: -30px;
+    z-index: -2;
+}
+.lector-1, .lector-11, .lector-12, .lector-13 {
+    isolation: isolate;
+  }
+
+  .lector-2, .lector-5 {
+    fill: #d4d7d8;
+  }
+
+  .lector-2 {
+    opacity: 0.12;
+    mix-blend-mode: multiply;
+  }
+
+  .lector-3 {
+    fill: #d9dcf1;
+  }
+
+  .lector-4 {
+    fill: #8794ca;
+  }
+
+  .lector-6 {
+    fill: #2e6c94;
+  }
+
+  .lector-7 {
+    fill: #5c5c5c;
+  }
+
+  .lector-8 {
+    fill: #5d5d5d;
+  }
+
+  .lector-9 {
+    fill: #72a0bb;
+  }
+
+  .lector-10, .lector-13 {
+    fill: #fff;
+  }
+
+  .lector-11, .lector-12, .lector-13 {
+    opacity: 0.51;
+  }
+
+  .lector-11 {
+    fill: url(#Degradado_lector_2);
+  }
+
+  .lector-12 {
+    fill: url(#Degradado_lector_2-2);
+  }
+
+  .lector-14 {
+    fill: #f7b9b0;
+  }
+
+  .lector-15 {
+    fill: #1e6287;
+  }
+
+  .lector-16 {
+    fill: #e3a232;
+  }
+
+  .lector-17 {
+    fill: #b88127;
+  }
+
+  .lector-18 {
+    fill: #f2958e;
+  }
+
+  .lector-19 {
+    fill: #d4edfc;
+  }
+
+  .lector-20 {
+    fill: #48748d;
+  }
+
+  .lector-21 {
+    fill: #3d5b74;
+  }

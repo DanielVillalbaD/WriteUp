@@ -1,0 +1,45 @@
+@import '../share/variables.scss';
+
+main {
+    width: 100%;
+    max-height: calc(100vh - 50px);
+    overflow: hidden;
+    position: relative;
+    max-width: 1920px;
+}
+
+
+.contraste {
+    h1, h2, h3, h4 {
+        color: #fafafa !important;
+    }
+    p, a {
+        color: $light !important;
+    }
+    #lines, #blines {
+        background: #222 !important;
+        opacity: 1;
+        .line {
+            opacity: .2;
+        }
+    }
+
+    .player__btn {
+        g {
+            stroke: $light;
+        }
+        path {
+            stroke: $light;
+        }
+        rect {
+            fill: $light;
+        }
+    }
+
+    tspan {
+        color: white;
+        fill: white;
+    }
+}
+
+
